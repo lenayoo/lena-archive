@@ -1,9 +1,15 @@
-import { useState } from "react";
-
 import "./App.css";
+import { Github } from "./pages/github";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      What did you learn today?
+      <div>
+        <Github />
+      </div>
+    </>
+  );
 }
 
 export default App;
