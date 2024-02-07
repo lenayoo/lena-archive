@@ -1,4 +1,4 @@
-export const Github = () => {
+export const GitHub = () => {
   return (
     <div>
       github

@@ -1,12 +1,14 @@
 import "./App.css";
-import { Github } from "./pages/Github";
+import { GitHub } from "./pages/Github";
+import { LearnReact } from "./pages/React";
 
 function App() {
   return (
     <>
-      What did you learn today?
+      <h1>Essential FE knowledge⛵️</h1>
       <div>
-        <Github />
+        <LearnReact />
+        <GitHub />
       </div>
     </>
   );
