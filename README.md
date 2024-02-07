@@ -1,1 +1,1 @@
-# Junior FE developer's daily jounal
+# Junior FE developer's daily journal
