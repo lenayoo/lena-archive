@@ -3,8 +3,13 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Essential FE knowledge⛵️</h1>
-      <div></div>
+      <div className="header">
+        <h1>M.TECH BLOG⛵️</h1>
+      </div>
+      <div>
+        <div className="navbar">navbar</div>
+        <div className="content">main content</div>
+      </div>
     </>
   );
 }
