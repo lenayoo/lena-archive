@@ -1,14 +1,24 @@
 /* main */
-
 #root {
   background-color: #070F2B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
   text-align: center;
   width: 100vw;
-  background-color: blanchedalmond;
-  color: #836FFF;
+  height: 17vh;
+  margin-top: 0;
+  background-color: #86B6F6;
+  color: #535C91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
@@ -19,8 +29,13 @@
   flex: 0 0 200px;
   height: 100vh;
   padding: 1.5em 2em;
-  background-color: #9290C3;
+  background-color: #EEF5FF;
   color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 ul {
@@ -32,6 +47,8 @@ ul {
 li {
   margin: 0.5rem 0;
   font-size: large;
+  color: #333;
+  text-decoration: none;
 }
 
 .content {
