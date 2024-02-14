@@ -26,7 +26,7 @@
 }
 
 .navbar {
-  flex: 0 0 200px;
+  flex: 0 0 300px;
   height: 100vh;
   padding: 1.5em 2em;
   background-color: #EEF5FF;
@@ -45,7 +45,7 @@ ul {
 }
 
 li {
-  margin: 0.5rem 0;
+  margin: 0.7rem 0;
   font-size: large;
   color: #333;
   text-decoration: none;
