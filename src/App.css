@@ -1,9 +1,14 @@
 /* main */
+
+#root {
+  background-color: #070F2B;
+}
+
 .header {
   text-align: center;
   width: 100vw;
   background-color: blanchedalmond;
-  color: rgba(0, 0, 0, 0.8);
+  color: #836FFF;
 }
 
 .main {
@@ -14,7 +19,7 @@
   flex: 0 0 200px;
   height: 100vh;
   padding: 1.5em 2em;
-  background-color: #f4f4f4;
+  background-color: #9290C3;
   color: #333;
 }
 
