@@ -45,8 +45,6 @@ function App() {
             <Route path="/github" element={<Github />} />
             <Route path="/library" element={<Library />} />
           </Routes>
-          <h3>Title</h3>
-          <p>Content</p>
         </div>
       </div>
     </Router>

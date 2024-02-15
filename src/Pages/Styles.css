@@ -1,0 +1,21 @@
+/* react */
+.form {
+  background-color: yellowgreen;
+  width: 80vw;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0 2.5rem;
+}
+
+.container {
+  flex: 1;
+  margin: 0.5em 3.5em;
+}
+
+.container__title h3 {
+  border-bottom: 2px solid gray;
+  padding-bottom: 1em;
+}
