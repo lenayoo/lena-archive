@@ -1,16 +1,13 @@
 import "./Styles.css";
+import Form from "./Form";
 
 function React() {
   return (
-    <div className="form">
-      <div className="title">
-        <h1>Learning REACT</h1>
-      </div>
-      <div className="container">
-        <h3 className="container__title">Title</h3>
-        <p className="container__content">Content</p>
-      </div>
-    </div>
+    <Form
+      title="Learning React"
+      containerTitle="useMemo"
+      containerContent="변수 최적화를 위한 useMemo 사용법"
+    />
   );
 }
 

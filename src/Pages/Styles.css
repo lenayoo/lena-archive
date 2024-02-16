@@ -1,7 +1,7 @@
 /* react */
 .form {
-  background-color: yellowgreen;
   width: 80vw;
+  color: whitesmoke;
 }
 
 .title {
@@ -16,6 +16,7 @@
 }
 
 .container__title h3 {
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid whitesmoke;
   padding-bottom: 1em;
+
 }
