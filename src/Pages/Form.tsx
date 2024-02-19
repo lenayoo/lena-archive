@@ -7,9 +7,9 @@ function Form(props: {
 }) {
   return (
     <div className="form">
-      <div className="title">
+      {/* <div className="title">
         <h1>{props.title}</h1>
-      </div>
+      </div> */}
       <div className="container">
         <h3 className="container__title">{props.containerTitle}</h3>
         <p className="container__content">{props.containerContent}</p>
