@@ -5,8 +5,9 @@ import Javascript from "./Pages/Javascript";
 import Nodejs from "./Pages/Nodejs";
 import Github from "./Pages/Github";
 import Library from "./Pages/Library";
-import "./App.css";
 import Tailwind from "./Pages/Tailwind";
+import "./App.css";
+import "./output.css";
 
 function App() {
   return (

@@ -1,10 +1,9 @@
-import "./Styles.css";
 import Form from "./Form";
 
 function React() {
   return (
     <>
-      <div className="subject">
+      <div className="flex justify-center p-6 pb-10 font-mono">
         <h1>Learning React</h1>
       </div>
       <Form

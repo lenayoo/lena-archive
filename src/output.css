@@ -1,7 +1,10 @@
-/* main */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
-  background-color: #070F2B;
-  font-family: 'playfair';
+  background-color: #333;
+  font-family: 'Poppins', sans-serif;
 }
 
 * {
