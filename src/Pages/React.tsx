@@ -1,6 +1,7 @@
 import Form from "./Form";
+import Container from "./Container";
 
-function React() {
+const React = () => {
   return (
     <>
       <div className="flex justify-center p-6 pb-10 font-mono">
@@ -11,8 +12,9 @@ function React() {
         containerTitle="useMemo"
         containerContent="변수 최적화를 위한 useMemo 사용법"
       />
+      <Container />
     </>
   );
-}
+};
 
 export default React;

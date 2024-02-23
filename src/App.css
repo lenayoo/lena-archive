@@ -1,13 +1,10 @@
 /* main */
-#root {
-  background-color: #070F2B;
-  font-family: 'playfair';
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
+  font-size: large;
 }
 
 .header {
