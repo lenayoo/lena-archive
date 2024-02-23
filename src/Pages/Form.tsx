@@ -1,10 +1,6 @@
 import "./Styles.css";
 
-const Form = (props: {
-  title: string;
-  containerTitle: string;
-  containerContent: string;
-}) => {
+const Form = (props: { containerTitle: string; containerContent: string }) => {
   return (
     <div className="form">
       <div className="container">

@@ -1,14 +1,12 @@
 import Form from "./Form";
 import Container from "./Container";
+import Header from "./Header";
 
 const React = () => {
   return (
     <>
-      <div className="flex justify-center p-6 pb-10 font-mono">
-        <h1>Learning React</h1>
-      </div>
+      <Header headerTitle="Learning React" />
       <Form
-        title="Learning React"
         containerTitle="useMemo"
         containerContent="변수 최적화를 위한 useMemo 사용법"
       />

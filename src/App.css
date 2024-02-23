@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* in order ton change whole font family, you need to do it here */
   font-family: monospace;
   font-size: large;
 }
