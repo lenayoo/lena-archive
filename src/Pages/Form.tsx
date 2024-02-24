@@ -15,7 +15,9 @@ const Form = ({
           <ul>
             {Array.isArray(containerContent) ? (
               containerContent.map((content: string, index: number) => (
-                <li key={index}>{content}</li>
+                <li key={index} className="list-unstyled text-white">
+                  {content}
+                </li>
               ))
             ) : (
               <p>{containerContent}</p>
