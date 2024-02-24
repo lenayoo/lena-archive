@@ -1,14 +1,12 @@
 import Form from "./Form";
+import Header from "./Header";
 import "./Styles.css";
 
 function Typescript() {
   return (
     <>
-      <div className="subject">
-        <h1>All about Typescript</h1>
-      </div>
+      <Header headerTitle="All about Typescript" />
       <Form
-        title="All about TypeScript"
         containerTitle="What is Typescript"
         containerContent="Typescript is a superset of javascript. It detects error during compile time."
       />
