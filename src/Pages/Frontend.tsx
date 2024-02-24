@@ -1,7 +1,9 @@
+import Header from "./Header";
+
 const Frontend = () => {
   return (
     <>
-      <Form />
+      <Header headerTitle="To be a good frontend engineer" />
     </>
   );
 };
