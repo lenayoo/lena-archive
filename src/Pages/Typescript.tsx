@@ -1,6 +1,5 @@
-import Form from "./Form";
-import Header from "./Header";
-import "./Styles.css";
+import Form from "../Components/Form";
+import Header from "../Components/Header";
 
 function Typescript() {
   return (

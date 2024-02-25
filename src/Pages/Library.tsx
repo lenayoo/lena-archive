@@ -1,5 +1,13 @@
+import Header from "../Components/Header";
+import Form from "../Components/Form";
+
 function Library() {
-  return <div>Library</div>;
+  return (
+    <>
+      <Header headerTitle="Library" />
+      <Form containerTitle="Library" containerContent="Library" />
+    </>
+  );
 }
 
 export default Library;

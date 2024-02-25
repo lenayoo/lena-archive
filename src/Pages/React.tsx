@@ -1,6 +1,6 @@
-import Form from "./Form";
-import Container from "./Container";
-import Header from "./Header";
+import Form from "../Components/Form";
+import Container from "../Components/Container";
+import Header from "../Components/Header";
 
 const React = () => {
   return (
