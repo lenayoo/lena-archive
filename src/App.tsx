@@ -6,6 +6,7 @@ import Nodejs from "./Pages/Nodejs";
 import Github from "./Pages/Github";
 import Library from "./Pages/Library";
 import Tailwind from "./Pages/Tailwind";
+import Database from "./Pages/Database";
 import "./App.css";
 import "./output.css";
 
@@ -39,6 +40,9 @@ function App() {
             <li>
               <Link to="/tailwind">Tailwind (1)</Link>
             </li>
+            <li>
+              <Link to="/database">Database (1)</Link>
+            </li>
           </ul>
         </div>
         <div className="content">
@@ -50,6 +54,7 @@ function App() {
             <Route path="/github" element={<Github />} />
             <Route path="/library" element={<Library />} />
             <Route path="/tailwind" element={<Tailwind />} />
+            <Route path="/database" element={<Database />} />
           </Routes>
         </div>
       </div>
