@@ -9,6 +9,7 @@ import Tailwind from "./Pages/Tailwind";
 import Database from "./Pages/Database";
 import "./App.css";
 import "./output.css";
+import InputContainer from "./Pages/InputContainer";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       <div className="main">
         <div className="navbar">
           <ul>
+            <li>
+              <Link to="/inputcontainer">Input</Link>
+            </li>
             <li>
               <Link to="/react">React (4)</Link>
             </li>
@@ -47,6 +51,7 @@ function App() {
         </div>
         <div className="content">
           <Routes>
+            <Route path="/inputcontainer" element={<InputContainer />} />
             <Route path="/react" element={<React />} />
             <Route path="/typescript" element={<Typescript />} />
             <Route path="/javascript" element={<Javascript />} />
