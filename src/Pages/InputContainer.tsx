@@ -1,5 +1,6 @@
 import Header from "../Components/Header";
 import { useState } from "react";
+import Form from "../Components/Form";
 
 type Input = {
   title: string;
@@ -31,7 +32,7 @@ const InputContainer = () => {
   };
 
   return (
-    <div className="ml-10">
+    <div className="m-10">
       <Header headerTitle="Input" />
       <form
         className="flex flex-col justify-center ml-10 p-5 rounded bg-slate-300 text-black"
@@ -82,6 +83,12 @@ const InputContainer = () => {
         />
       </form>
       <h1 className="text-white">hello lena</h1>
+      {submittedData &&
+        submittedData.map((data, index) => (
+          <div key={index}>
+            <Form containerTitle={data.title} containerContent={data.content} />
+          </div>
+        ))}
     </div>
   );
 };
