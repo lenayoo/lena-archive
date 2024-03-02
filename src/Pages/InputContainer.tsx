@@ -27,12 +27,9 @@ const InputContainer = () => {
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmittedData([...submittedData, input]);
-
     setInput({ title: "", content: "", area: "JavaScript" });
   };
 
-  console.log("changed data", input);
-  console.log("submitted data", submittedData);
   return (
     <div className="ml-10">
       <Header headerTitle="Input" />
@@ -84,6 +81,7 @@ const InputContainer = () => {
           value="Submit"
         />
       </form>
+      <h1 className="text-white">hello lena</h1>
     </div>
   );
 };

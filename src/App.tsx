@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className="header">
-        <h1>☁️ FE TECH BLOG ☁️</h1>
+        <h1>☁️ Hello Lena ☁️</h1>
       </div>
       <div className="main">
         <div className="navbar">
