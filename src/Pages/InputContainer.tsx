@@ -1,26 +1,45 @@
 import Header from "../Components/Header";
 import { useState } from "react";
 
+type Input = {
+  title: string;
+  content: string;
+  area: string;
+};
+
 const InputContainer = () => {
-  const [input, setInput] = useState<Record<string, string>>({
+  const [input, setInput] = useState<Input>({
     title: "",
     content: "",
-    area: "JavaScirpt"
+    area: "JavaScript"
   });
+
+  const [submittedData, setSubmittedData] = useState<Input[]>([]);
 
   const inputHandler = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
-    console.log("e", e.target.name, e.target.value);
     const name = e.target.name;
     const value = e.target.value;
     setInput({ ...input, [name]: value });
   };
 
+  const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmittedData([...submittedData, input]);
+
+    setInput({ title: "", content: "", area: "JavaScript" });
+  };
+
+  console.log("changed data", input);
+  console.log("submitted data", submittedData);
   return (
     <div className="ml-10">
       <Header headerTitle="Input" />
-      <form className="flex flex-col justify-center ml-10 p-5 rounded bg-slate-300 text-black">
+      <form
+        className="flex flex-col justify-center ml-10 p-5 rounded bg-slate-300 text-black"
+        onSubmit={submitHandler}
+      >
         <label>
           Title:
           <input
