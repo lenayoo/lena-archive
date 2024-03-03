@@ -1,5 +1,3 @@
-import "./Styles.css";
-
 const Form = ({
   containerTitle,
   containerContent
@@ -8,10 +6,10 @@ const Form = ({
   containerContent: string | string[];
 }) => {
   return (
-    <div className="form">
-      <div className="container">
-        <h3 className="container__title">{containerTitle}</h3>
-        <div className="container__content">
+    <div className="w-30">
+      <div className="w-25 m-2 md:m-14 text-gray bg-pale-gray p-4 rounded-md">
+        <h2 className="text-lg">{containerTitle}:</h2>
+        <div className="mt-4 text-gray">
           <ul>
             {Array.isArray(containerContent) ? (
               containerContent.map((content: string, index: number) => (

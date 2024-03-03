@@ -6,6 +6,9 @@ export default {
     extend: {
       fontFamily:{
         'sans': ['Poppins', 'sans-serif'], 
+      },
+      colors: {
+        "pale-gray": "#B5C0D0"
       }
     },
   },
