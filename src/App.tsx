@@ -14,7 +14,7 @@ function App() {
             </li>
           </ul>
         </div>
-        <div className="content w-full bg-[url('/spring.png')] bg-no-repeat bg-cover">
+        <div className="content w-full bg-[url('/sunset.png')] bg-no-repeat bg-cover">
           <Routes>
             <Route path="/inputcontainer" element={<InputContainer />} />
           </Routes>
