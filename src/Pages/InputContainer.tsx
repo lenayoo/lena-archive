@@ -82,7 +82,6 @@ const InputContainer = () => {
           value="Submit"
         />
       </form>
-      <h1 className="text-white">hello lena</h1>
       {submittedData &&
         submittedData.map((data, index) => (
           <div key={index}>

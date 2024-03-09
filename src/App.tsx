@@ -1,12 +1,4 @@
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
-import React from "./Pages/React";
-import Typescript from "./Pages/Typescript";
-import Javascript from "./Pages/Javascript";
-import Nodejs from "./Pages/Nodejs";
-import Github from "./Pages/Github";
-import Library from "./Pages/Library";
-import Tailwind from "./Pages/Tailwind";
-import Database from "./Pages/Database";
 import "./App.css";
 import "./output.css";
 import InputContainer from "./Pages/InputContainer";
@@ -14,52 +6,17 @@ import InputContainer from "./Pages/InputContainer";
 function App() {
   return (
     <Router>
-      <div className="header">
-        <h1>☁️ Hello Lena ☁️</h1>
-      </div>
       <div className="main">
         <div className="navbar">
           <ul>
             <li>
               <Link to="/inputcontainer">Input</Link>
             </li>
-            <li>
-              <Link to="/react">React (4)</Link>
-            </li>
-            <li>
-              <Link to="/typescript">TypeScript (1)</Link>
-            </li>
-            <li>
-              <Link to="/javascript">JavaScript (1)</Link>
-            </li>
-            <li>
-              <Link to="/nodejs">Node.js (0)</Link>
-            </li>
-            <li>
-              <Link to="/github">GitHub (3)</Link>
-            </li>
-            <li>
-              <Link to="/library">Library (1)</Link>
-            </li>
-            <li>
-              <Link to="/tailwind">Tailwind (1)</Link>
-            </li>
-            <li>
-              <Link to="/database">Database (1)</Link>
-            </li>
           </ul>
         </div>
-        <div className="content">
+        <div className="content w-full bg-[url('/spring.png')] bg-no-repeat bg-cover">
           <Routes>
             <Route path="/inputcontainer" element={<InputContainer />} />
-            <Route path="/react" element={<React />} />
-            <Route path="/typescript" element={<Typescript />} />
-            <Route path="/javascript" element={<Javascript />} />
-            <Route path="/nodejs" element={<Nodejs />} />
-            <Route path="/github" element={<Github />} />
-            <Route path="/library" element={<Library />} />
-            <Route path="/tailwind" element={<Tailwind />} />
-            <Route path="/database" element={<Database />} />
           </Routes>
         </div>
       </div>

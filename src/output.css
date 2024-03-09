@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #root {
-  background-color: #333;
+  color: black;
   font-family: 'Poppins', sans-serif;
 }
 
