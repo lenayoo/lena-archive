@@ -1,11 +1,21 @@
 import Form from "../Components/Form";
 
 export const Test = () => {
-  const callApi = () => {
+  fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then((response) => response.json())
+    .then((json) => {
+      console.log("json", json);
+      return json;
+    });
+  console.log(
+    "outside",
     fetch("https://jsonplaceholder.typicode.com/todos/1")
       .then((response) => response.json())
-      .then((json) => console.log("json placeholder", json));
-  };
+      .then((json) => {
+        console.log("json", json);
+        return json;
+      })
+  );
 
   return (
     <div>
@@ -18,7 +28,6 @@ export const Test = () => {
       />
       <div className="py-1 px-10">
         <h1>TEST for api calling</h1>
-        {callApi()}
       </div>
     </div>
   );
