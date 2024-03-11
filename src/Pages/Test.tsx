@@ -1,21 +1,26 @@
+import { useState } from "react";
 import Form from "../Components/Form";
 
+type dataType = {
+  id: number;
+  userId: number;
+  title: string;
+  completed: boolean;
+};
+
 export const Test = () => {
+  const [data, setData] = useState<dataType>({
+    id: 0,
+    userId: 0,
+    title: "",
+    completed: false
+  });
+
   fetch("https://jsonplaceholder.typicode.com/todos/1")
     .then((response) => response.json())
-    .then((json) => {
-      console.log("json", json);
-      return json;
+    .then((data: dataType) => {
+      setData(data);
     });
-  console.log(
-    "outside",
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
-      .then((response) => response.json())
-      .then((json) => {
-        console.log("json", json);
-        return json;
-      })
-  );
 
   return (
     <div>
@@ -27,7 +32,7 @@ export const Test = () => {
         ]}
       />
       <div className="py-1 px-10">
-        <h1>TEST for api calling</h1>
+        <h1>TEST for api calling :{data.title}</h1>
       </div>
     </div>
   );
