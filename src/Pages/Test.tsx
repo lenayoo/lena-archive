@@ -31,7 +31,7 @@ export const Test = () => {
           "2. api calling 1,2,3"
         ]}
       />
-      <div className="py-1 px-10">
+      <div className="py-1 px-10 mt-5 bg-purple-500 bg-opacity-20 rounded shadow-md w-full max-w-md ml-10">
         <h1>TEST for api calling :{data.title}</h1>
       </div>
     </div>
